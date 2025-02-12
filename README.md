@@ -19,7 +19,11 @@ root.hcl
       terraform.tf
 ```
 
-To apply a single resource, you can run terraform from within the environment specific directory. For example, to apply the VPC for Staging, you can enter the directory `staging/us-east-1/staging/vpc/` and use `terragrunt apply`.  
+To apply a single resource, you can run Terragrunt from within the environment specific directory. For example, to apply the VPC for Staging: 
+```
+cd staging/us-east-1/staging/vpc/
+terragrunt apply
+```
 
 # An overview of what Terragrunt is doing
 
